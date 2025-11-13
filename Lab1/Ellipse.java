@@ -15,7 +15,7 @@ public class Ellipse extends Rectangle {
                 ", Width=" + getWidth() +
                 ", Height=" + getHeight() +
                 ", Area=" + String.format("%.2f", getArea()) +
-                ", Sides=0 (Curved Shape)]";
+                ", Sides=0 (Curved Shape)]\n";
     }
 }
 

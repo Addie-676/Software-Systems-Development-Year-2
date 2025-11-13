@@ -5,13 +5,9 @@ public abstract class Shape {
     public Shape(String color) {
         this.color = color;
     }
-
+//getter and settera
     public String getColor() {
         return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
     }
 
     public abstract double getArea();

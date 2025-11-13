@@ -10,25 +10,18 @@ public class Rectangle extends Shape {
         this.height = height;
     }
 
-    // Getters and Setters
+    // Getters
     public double getWidth() {
         return width;
-    }
-
-    public void setWidth(double width) {
-        this.width = width;
     }
 
     public double getHeight() {
         return height;
     }
 
-    public void setHeight(double height) {
-        this.height = height;
-    }
+
 
     // Implementation of getArea()
-    @Override
     public double getArea() {
         return width * height;
     }
@@ -37,7 +30,7 @@ public class Rectangle extends Shape {
                 ", Width=" + width +
                 ", Height=" + height +
                 ", Area=" + String.format("%.2f", getArea()) +
-                ", Sides=4]";
+                ", Sides=4]\n";
     }
 
 }

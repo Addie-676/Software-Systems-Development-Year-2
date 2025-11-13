@@ -25,7 +25,7 @@ public class Circle extends Shape {
         return "Circle [Color=" + getColor() +
                 ", Radius=" + radius +
                 ", Area=" + String.format("%.2f", getArea()) +
-                ", Sides=0 (Curved Shape)]";
+                ", Sides=0 (Curved Shape)]\n";
     }
 
 }
