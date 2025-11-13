@@ -1,21 +1,22 @@
 package Lab1;
 
-public class Ellipse extends Rectangle {
 
-    public Ellipse(String color, double width, double height) {
-        super(color, width, height);
+public class Ellipse extends Shape {
+    protected double halfheight ;
+    protected double halfwidth ;
+
+    public Ellipse(double halfheight, double halfwidth) {
+        this.halfheight = halfheight;
+        this.halfwidth = halfwidth;
     }
 
     @Override
-    public double getArea() {
-        return Math.PI * (getWidth() / 2) * (getHeight() / 2);
+    protected double getArea() {
+        return  Math.PI*halfwidth*halfheight;
     }
+
+    @Override
     public String toString() {
-        return "Ellipse [Color=" + getColor() +
-                ", Width=" + getWidth() +
-                ", Height=" + getHeight() +
-                ", Area=" + String.format("%.2f", getArea()) +
-                ", Sides=0 (Curved Shape)]\n";
+        return super.toString()+"The area of the ellipse is: "+ String.format("%.2f",getArea())+"\nThe number of sides : "+getSides()+"\n\n";
     }
 }
-

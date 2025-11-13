@@ -5,7 +5,7 @@ public class MobileLegend extends Data{
     private String rank;
     private double totalPlayTime;
 
-    //added getters just for practice although I just used to string to write print the data
+    //added getters just for practice although I just used toString to write print the data
 
     public double getMLplaytime(){
         return totalPlayTime;

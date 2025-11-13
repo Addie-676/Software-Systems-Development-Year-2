@@ -1,7 +1,7 @@
 
 package JavaExperiments.Practice1valoData;
 
-public class Data {
+abstract class Data {
     protected String name;
     protected Integer age;
 

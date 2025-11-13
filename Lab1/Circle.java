@@ -1,33 +1,20 @@
-package Lab1;   // keep or remove depending on your folder setup
+package Lab1;
+
 
 public class Circle extends Shape {
-    private double radius;
+    protected double radius ;
 
-    // Constructor
-    public Circle(String color, double radius) {
-        super(color);
-        this.radius = radius;
-    }
-
-    public double getRadius() {
-        return radius;
-    }
-
-    public void setRadius(double radius) {
+    public Circle(double radius) {
         this.radius = radius;
     }
 
     @Override
-    public double getArea() {
-        return Math.PI * radius * radius;
+    protected double getArea() {
+        return 3*Math.PI*radius*radius;
     }
+
+    @Override
     public String toString() {
-        return "Circle [Color=" + getColor() +
-                ", Radius=" + radius +
-                ", Area=" + String.format("%.2f", getArea()) +
-                ", Sides=0 (Curved Shape)]\n";
+        return super.toString()+"The area of the circle is: "+ String.format("%.2f",getArea())+"\nThe number of sides : "+getSides()+"\n\n";
     }
-
 }
-
-

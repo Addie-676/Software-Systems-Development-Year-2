@@ -1,14 +1,18 @@
 package Lab1;
-public abstract class Shape {
-    private String color;
+abstract class Shape {
+    private int sides;
 
-    public Shape(String color) {
-        this.color = color;
+    protected int getSides() {
+        return sides;
     }
-//getter and settera
-    public String getColor() {
-        return color;
+    protected void setSides(int sides) {
+        this.sides = sides;
+    }
+    abstract protected double getArea();
+
+    @Override
+    public String toString() {
+        return "Values\n";
     }
 
-    public abstract double getArea();
 }

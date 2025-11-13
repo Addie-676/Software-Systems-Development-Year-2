@@ -9,6 +9,7 @@ public class Valorant extends Data {
         this.totalPlayTime = totalPlayTime;
 
     }
+    //added getters just for practice although I just used toString to write print the data
     public String getValoRank() {
         return rank;
     }
